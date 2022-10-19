@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/styls.css" type="text/css" rel="stylesheet"/>
+    <style>
+        h1{
+            color:blue;
+        }
+        table{
+            border: 2px solid;
+        }
+        input[type="submit"]{
+            margin-left:70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Booking</h1>
+    <table>
+        <tr>
+            <td><label for="from">From : </label></td>
+            <td><input type="text" id="from"> </td>
+        
+        </tr>
+        <tr>
+            <td><label for="to">To: </label></td>
+            <td><input type="text" id="to"> </td>
+        
+        </tr>
+        <tr>
+            <td><label for="dep">Departure: </label></td>
+            <td><input type="date" id="dep"> </td>
+        </tr>
+        <tr>
+            <td><label for="ret">Return: </label></td>
+            <td><input type="date" id="ret"> </td>
+        </tr>
+        <tr>
+            <td><label for="pas">Passengers: </label></td>
+            <td><input type="number" id="pas"> </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="BOOK FLIGHT">
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>

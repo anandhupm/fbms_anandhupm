@@ -1,0 +1,24 @@
+<html>
+    <head><title id="flame">FBM Airlines :Register User</title>
+        <link rel="icon" type="image/x-icon" href="images\icon.png"></head>
+    <body align="center" style="padding:3%; color:rgb(8, 62, 113);" >
+
+        <img src="images\airplane.png" style="float:right;" width="500px">
+
+        <input type="button" name="btnshow" value="Show Data" onclick="javascript:showData()">
+        <h1>Welcome <span id="fame"> </span> from <span id="add"> </span></h1>
+        <script>
+            
+            function showData(){
+                var fname=localStorage.getItem('fname');
+                var lname=localStorage.getItem('lname');
+                var add=localStorage.getItem('add');
+                console.log(fname);
+                document.getElementById('fame').innerHTML=fname+' '+lname;
+                document.getElementById('flame').innerHTML="FBM Airlines : "+fname+' '+lname;
+                document.getElementById('add').innerHTML=add;
+            }
+        </script>
+       
+    </body>
+</html>
